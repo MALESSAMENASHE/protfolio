@@ -1,0 +1,112 @@
+
+:root{
+    --primery-color :blue;
+    --secondery-color: gold;
+    --overlay-color: rgba(24,39,51,0.85);
+    --menu-speed:0.8s;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    /* The default font size of the browser is 16px, so if we want 1rem to be equal to 10px, we divide 10px by 16px = 62.5% */
+    font-size: 62.5%;
+  }
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+  }
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.navbar ul li{
+   margin: 1rem 2rem ;
+ 
+    
+}
+.navbar{
+    width: auto;
+    height: 3rem;
+    border-bottom: gold solid 2px;
+    display: flex;
+    justify-content: center; 
+    }
+
+    #studio{
+      position: relative;
+        height: 95vh;
+        width: 100%;
+        background-image: url(/Asst/studio.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        opacity: 0.6;
+     animation:studiopics 20s linear 5s infinite alternate ;}
+
+     #studio div {
+      display: flex;
+      padding-top: 7rem;
+    
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem ;
+      z-index:2;
+     }
+
+ @keyframes studiopics{
+    0%{background-image: url(//Asst/wimages.png)}
+    5%{background-image: url(/Asst/studio.jpg)}
+    50%{background-image: url(/Asst/wimages.png)}
+    55%{background-image: url(/Asst/workshop1.jpg)}
+
+} 
+#page02 .container > div {
+  padding-top: 6 rem ;
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+#page02.container.abuot{
+  width: 50%;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem ;
+ 
+}
+.pics{
+  width: 50%;
+  height: 400px;
+  background-image: url(/Asst/workshop3.jpg);
+  background-position: center center center / cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+   /* no-repeat center center center/cover  ; */
+
+}
+
+
+  @media only screen and (max-width: 800px) {
+    html {
+      font-size: 50%;
+    }
+}
